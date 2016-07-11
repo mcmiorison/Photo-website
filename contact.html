@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" ccontent="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link href="css\normalize.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="ListItem">
+        <h1>
+            Contact Me
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </h1>
+        <br />
+        <br />
+
+        <p>For more information.</p>
+        <div id="image2">
+            <a href="img\Silhouette.jpg"></a>
+            <img src="img\Silhouette.jpg" style="max-width:100%;height:auto;">
+        </div>
+        <br />
+        <div id="Contact page">
+            <br />
+            <br />
+           
+            <form action="/form" method="POST" enctype="text/plain">
+                <p>
+                    <label>Your Name</label><br />
+                    <input type="text" id="name" name="Your_name" required />
+                    <br />
+                    <br />
+                    <label>Your Email</label><br />
+                    <input type="text" id="email" name="email" required>
+                    <br />
+                    <br />
+                    <label>Your Message</label><br />
+                    <textarea type="message" id="message" required></textarea>
+                    <br>
+                    <br />
+                    <input type="button" name="Send Form" value="Send Form"/>
+                    <input type="reset" name="reset" value="Clear" />
+            </form>
+        </div>
+    </div>
+    <footer>
+        <a target="_blank" title="find us on Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+    </footer>
+   
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function (e) {
+            $(window).bind("contextmenu", function (e) {
+                e.preventDefault();
+                alert('Hey that belongs to Tehya!');
+            });
+        });
+        function submitButton() {
+            var name = $('#name').val();
+            console.log('name: ' + name)
+        };
+
+
+    </script>
+ 
+</body>
+</html>
