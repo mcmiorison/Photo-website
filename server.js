@@ -5,14 +5,24 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:20717/db_photography');
+
+var routes = require('./mean-todo/routes/index');
+var users = require('./mean-todo/routes/users');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+//Make db available to router
+app.use(function (req, res, next) {
+    req.db = db;
+    next();
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
