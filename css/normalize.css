@@ -1,0 +1,130 @@
+/*Index Html*/
+body { 
+    background-color: white;
+     }
+
+h1 {
+    background-color:  #FFC1C1;
+    text-align: left;
+    font-size: 60px;
+    font-family: 'Monotype Corsiva';
+    font-weight: normal;
+    line-height: 2;
+    margin: 0 auto;
+    width: auto;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+#Contact page {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    margin-left: 10%;
+    padding: 10em;
+}
+
+ ul {
+    float:right;
+    display: inline;
+    margin-top: 0 auto;
+    text-decoration: none;
+   }
+
+ ul a {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-left: -10px;
+    font-size: 20px;
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top: 0 auto;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+ p {
+   font-family: Open sans;
+    margin-top: 0 5% 80px 0;
+    font-size: 25px;
+    text-align: left;
+}
+
+  #image {
+    margin-top: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+    #image img {
+     width: 45%;
+     border-radius: 50%;
+    }
+
+#image2 {
+    margin-top: 0 auto;
+    padding: 0 auto;
+   text-align: center;
+}
+ #image2 img {
+     width: 45%;
+     border-radius: 50%;
+ }
+
+ .ListItem {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 30px;
+    float: left;
+    float: right;
+    list-style-type: none;
+    margin-top: 0 auto;
+    margin-right: 30px;
+}
+
+/*Gallery*/
+
+.thumbnail img {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+
+
+.thumbnail > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+.thumbnail > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+.thumbnail > div:hover {
+  z-index: 1;
+}
+
+.thumbnail > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+ .slider {
+   width: 1000px;
+   height: 500px;
+   overflow:hidden;
+   margin: 80px auto;
+   text-align: center;
+ }
+
+
+.slider img {
+    width:1000px;
+    height: 500px;
+}
